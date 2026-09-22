@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration:none;
+  scroll-behavior:smooth;
+  list-style:none;
+  background-color:lavenderblush;
+
+header {
+  position:fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 5rem;
+  background-color: lavenderblush;
+  background-filter: blur(10px);
+  color:pink;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  z-index: 1000;
+}
+.logo {
+  color: purple;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  color: deeppink;
+  transform: scale(1.1);
+}
+.nav-links {
+  display:flex;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.nav-links:hover {
+  transform: scale(1.2);
+  color: deeppink;
+}
+li a {
+  position: relative;
+  color:darkorchid;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+li a::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  left:0;
+  height: 5px;
+  top: 25px;
+  border-radius: 2px;
+  transition:all 0.3s ease-in-out;
+  background: linear-gradient(to right,pink, salmon, deeppink, purple, rgb(162, 88, 192), lavender);
+}
+.visit-btn{
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right,pink, salmon, rgb(162, 88, 192), lavender);
+  color: rgb(236, 39, 204);
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  font-size: 1;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background:linear-gradient(to left,pink, salmon, deeppink, purple, rgb(162, 88, 192), lavender)
+}
+.visit-btn:hover {
+  background: linear-gradient(to right,lavender, rgb(162, 88, 192), pink);
+  color: rgb(236, 39, 204);
+  transform: scale(1.1);
+}
+menu-icon{
+font-size: 1.5rem;
+display:none;
+}
+section {
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+.home{ 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.home .home-content {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.home-img {
+  width: 30%;
+  position: relative;
+  align-items:center;
+  justify-content:center;
+}
+.info-box{ 
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+.home-text h1{
+  font-size: 2.5rem;
+  color: purple;
+  
+}
+.home-text h1 span{
+  background:linear-gradient(to left,pink, salmon, deeppink, purple, rgb(162, 88, 192), lavender)
+  color:transparent;
+  font-size: 3rem;
+}
+.btn {
+  cursor: pointer;
+  text-decoration: underline;
+  color: deeppink;
+  text-wrap: nowrap;
+  transition: all 0.3s ease-in-out;
+  text-align:center;
+}
+.btn:hover {
+  color: purple;
+  transform: scale(1.1);
+} 
+.socials {
+  display:flex;
+  color: deeppink;
+  align-items:center;
+  justify-content:center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socials-btn i{
+  color: deeppink;
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.socials-btn i:hover {
+  color: purple;
+  transform: scale(1.2);
+}
+.resume-content {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color: purple;
+}
+.projects-btn {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color: purple;
+  transform: scale(1.1);
+}
+}
+
+
